@@ -1,0 +1,13 @@
+const burger = document.querySelector('.navbar-burger')
+const first = document.querySelector('.first')
+const last = document.querySelector('.last')
+const middle = document.querySelector('.middle')
+const navbar = document.querySelector('.navbar')
+const menu = document.querySelector('.menu')
+burger.addEventListener('click', () => {
+    first.classList.toggle('rotate')
+    middle.classList.toggle('rotate')
+    last.classList.toggle('rotate')
+    navbar.classList.toggle('open')
+    menu.classList.toggle('open')
+})
